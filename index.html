@@ -8,32 +8,54 @@
   
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+  <!-- Start Header -->
+  <header class="intro-header-container">
+    <img src="images/logo.svg" alt="Snao Logo" class="logo">
 
-  Features
-  Company
-  Careers
-  About
-
-  Login
-  Register
-
-  Make remote work
-
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
-
-  Learn more
+    <ul class="navbar-list">
+      <li class="navbar-list-item">Features</li>
+      <li class="navbar-list-item">Company</li>
+      <li class="navbar-list-item">Careers</li>
+      <li class="navbar-list-item">About</li>
+    </ul>
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    <div class="header-account-section">
+      <a href="#" class="login-link">Login</a>
+      <button class="register-btn">Register</button>
+    </div>
+  </header>
+  <!-- End Header -->
+
+  <main class="intro-main-content-container">
+    <div class="main-content">
+      <h1 class="main-content-title">
+        Make remote work
+      </h1>
+
+      <p class="main-content-body">
+        Get your team in sync, no matter your location. Streamline processes, 
+        create team rituals, and watch productivity soar.
+      </p>
+
+      <button class="learn-more-btn">
+        Learn more
+      </button>
+
+      <div class="main-content-clients" aria-hidden="true">
+        <img src="images/client-databiz.svg" alt="Databiz client logo" class="company-img" aria-hidden="true">
+        <img src="images/client-audiophile.svg" alt="Audiophile client logo" class="company-img" aria-hidden="true">
+        <img src="images/client-meet.svg" alt="Meet client logo" class="company-img" aria-hidden="true">
+        <img src="images/client-maker.svg" alt="Maker client logo" class="company-img" aria-hidden="true">
+      </div>
+    </div>
+
+    <div class="hero-img-container">
+      <img src="images/image-hero-desktop.png" alt="Hero image desktop" class="hero-desktop">
+      <img src="images/image-hero-mobile.png" alt="Hero image mobile" class="hero-mobile">
+    </div>
+  </main>
 </body>
 </html>
