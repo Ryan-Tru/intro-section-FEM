@@ -18,79 +18,86 @@
       <img src="images/icon-menu.svg" alt="Menu Button" class="hamburger-img">
     </button>
 
-    <ul class="navbar-list">
-      <!-- Features accordion button -->
-      <li class="navbar-list-item">
-        <button class="accordion">
-          Features 
-          <img src="images/icon-arrow-up.svg" alt="Arrow icon" class="arrow-icon">
+    <div class="navbar-backdrop">
+      <nav class="navbar">
+        <button class="close-btn">
+          <img src="images/icon-close-menu.svg" alt="Close button image" class="close-img" aria-hidden="true">
         </button>
-        <div class="panel">
-          <ul class="features-panel-list">
-            <li class="features-panel-item">
-              <a href="#" class="features-panel-link">
-                <img src="images/icon-todo.svg" alt="Todo list img" class="features-panel-img">
-                Todo List
-              </a>
-            </li>
-            <li class="features-panel-item">
-              <a href="#" class="features-panel-link">
-                <img src="images/icon-calendar.svg" alt="Calendar img" class="features-panel-img">
-                Calendar
-              </a>
-            </li>
-            <li class="features-panel-item">
-              <a href="#" class="features-panel-link">
-                <img src="images/icon-reminders.svg" alt="Reminders img" class="features-panel-img">
-                Reminders
-              </a>
-            </li>
-            <li class="features-panel-item">
-              <a href="#" class="features-panel-link">
-                <img src="images/icon-planning.svg" alt="Planning img" class="features-panel-img">
-                Planning
-              </a>
-            </li>
-          </ul>
-        </div>
-      </li>
-
-      <!-- Company accordion button -->
-      <li class="navbar-list-item">
-        <button class="accordion">
-          Company 
-          <img src="images/icon-arrow-up.svg" alt="Arrow icon" class="arrow-icon">
-        </button>
-
-        <div class="panel">
-          <ul class="features-panel-list">
-            <li class="features-panel-item">
-              <a href="#" class="features-panel-link">
-                History
-              </a>
-            </li>
-            <li class="features-panel-item">
-              <a href="#" class="features-panel-link">
-                Our Team
-              </a>
-            </li>
-            <li class="features-panel-item">
-              <a href="#" class="features-panel-link">
-                Blog
-              </a>
-            </li>
-          </ul>
-        </div>
-      </li>
-
-      <li class="navbar-list-item">
-        Careers
-      </li>
-
-      <li class="navbar-list-item">
-        About
-      </li>
-    </ul>
+        <ul class="navbar-list">
+          <!-- Features accordion button -->
+          <li class="navbar-list-item">
+            <button class="accordion">
+              Features 
+              <img src="images/icon-arrow-up.svg" alt="Arrow icon" class="arrow-icon">
+            </button>
+            <div class="panel features-panel">
+              <ul class="panel-list">
+                <li class="panel-item">
+                  <a href="#" class="panel-link">
+                    <img src="images/icon-todo.svg" alt="Todo list img" class="panel-img">
+                    Todo List
+                  </a>
+                </li>
+                <li class="panel-item">
+                  <a href="#" class="panel-link">
+                    <img src="images/icon-calendar.svg" alt="Calendar img" class="panel-img">
+                    Calendar
+                  </a>
+                </li>
+                <li class="panel-item">
+                  <a href="#" class="panel-link">
+                    <img src="images/icon-reminders.svg" alt="Reminders img" class="panel-img">
+                    Reminders
+                  </a>
+                </li>
+                <li class="panel-item">
+                  <a href="#" class="panel-link">
+                    <img src="images/icon-planning.svg" alt="Planning img" class="panel-img">
+                    Planning
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+    
+          <!-- Company accordion button -->
+          <li class="navbar-list-item">
+            <button class="accordion">
+              Company 
+              <img src="images/icon-arrow-up.svg" alt="Arrow icon" class="arrow-icon">
+            </button>
+    
+            <div class="panel">
+              <ul class="panel-list">
+                <li class="panel-item">
+                  <a href="#" class="panel-link">
+                    History
+                  </a>
+                </li>
+                <li class="panel-item">
+                  <a href="#" class="panel-link">
+                    Our Team
+                  </a>
+                </li>
+                <li class="panel-item">
+                  <a href="#" class="panel-link">
+                    Blog
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+    
+          <li class="navbar-list-item">
+            Careers
+          </li>
+    
+          <li class="navbar-list-item">
+            About
+          </li>
+        </ul>
+      </nav>
+    </div>
   
     <div class="header-account-section">
       <a href="#" class="login-link">Login</a>
