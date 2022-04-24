@@ -139,6 +139,7 @@ body {
     font-size: 1.125rem;
     font-weight: 500;
     color: var(--medium-gray);
+    margin-bottom: 2rem;
 }
 
 .main-content-clients {
@@ -148,5 +149,16 @@ body {
 }
 
 .company-img {
-    width: 80px;
+    width: 70px;
+    height: auto;
+}
+
+.learn-more-btn {
+    border: none;
+    border-radius: 0.9375rem;
+    background-color: black;
+    font-weight: 700;
+    color: white;
+    padding: 1rem 2rem;
+    margin-bottom: 2.75rem;
 }
