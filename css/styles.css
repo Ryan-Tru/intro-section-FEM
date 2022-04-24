@@ -4,6 +4,8 @@
     --almost-white: hsl(0, 0%, 98%);
     --medium-gray: hsl(0, 0%, 41%);
     --almost-black: hsl(0, 0%, 8%);
+
+    --transition-time: all 0.2s ease;
 }
 
 /* Start CSS reset */
@@ -74,23 +76,99 @@ body {
     flex-direction: column;
 }
 
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
 
 
 /* Style Header and navbar */
 
 .intro-header-container {
+    position: relative;
     display: flex;
     align-items: center;
     padding: 1rem;
 }
 
+.navbar-backdrop {
+    display:flex;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 999;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: white;
+    height: 100vh;
+    width: 65%;
+}
+
+.close-btn {
+    border: none;
+    background-color: white;
+    align-self: flex-end;
+    margin: 1.5rem 1rem 1.5rem 0;
+}
+
+.close-img {
+    width: 1.925rem;
+}
+
 .navbar-list {
-    display: none;
     list-style-type: none;
+}
+
+.navbar-list-item {
+    margin: .75rem 2rem;
+    font-size: 1.25rem;
+    color: var(--medium-gray);
+}
+
+.arrow-icon {
+    margin-left: 1rem;
+    transform: rotate(180deg);
+    transition: var(--transition-time);
+}
+
+.arrow-icon-active {
+    transform: rotate(0deg);
 }
 
 .panel {
     display: none;
+}
+
+.panel-list {
+    padding: 0 1rem;
+}
+
+.panel-item {
+    margin: 1rem 0;
+}
+
+.panel-link {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--medium-gray);
+}
+
+.panel-img {
+    width: 20px;
 }
 
 .accordion {
@@ -98,6 +176,7 @@ body {
     align-items: center;
     border: none;
     background-color: transparent;
+    color: var(--medium-gray);
 }
 
 .header-account-section {
@@ -161,4 +240,121 @@ body {
     color: white;
     padding: 1rem 2rem;
     margin-bottom: 2.75rem;
+}
+
+/* Desktop/tablet styling */
+@media screen and (min-width: 720px) {
+
+    /* Style Header and navbar desktop*/
+
+    .intro-header-container {
+        align-items: center;
+    }
+
+    .navbar-backdrop {
+        display: flex;
+        position: relative;
+        z-index: inherit;
+        background: transparent;
+        height: 100%;
+        align-items: center;
+    }
+
+    .navbar {
+        position: relative;
+        background-color: transparent;
+        height: auto;
+    }
+
+    .close-btn {
+        display: none;
+    }
+
+    .navbar-list {
+        display: flex;
+        list-style-type: none;
+    }
+
+    .navbar-list-item {
+        margin: 0 2rem;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: var(--transition-time);
+    }
+
+    .navbar-list-item:hover {
+        color: black;
+    }
+
+    .panel {
+        display: none;
+        position: absolute;
+        background-color: white;
+        border-radius: 0.9375rem;
+        padding: 0 1.5rem;
+        box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
+        top: 35px;
+    }
+
+    .panel-list {
+        padding: 0;
+    }
+
+    .features-panel {
+        left: -20px;
+    }
+
+    .accordion {
+        display: flex;
+        cursor: pointer;
+        transition: var(--transition-time);
+    }
+
+    .accordion:hover > svg *,
+    .accordion:hover {
+        stroke: black;
+        color: black;
+    }
+
+    .arrow-icon {
+        flex: 1 0 auto;
+    }
+
+    .header-account-section {
+        display: flex;
+        margin-left: auto;
+        align-items: center;
+    }
+
+    .login-link {
+        margin-right: 40px;
+        color: var(--medium-gray);
+        transition: var(--transition-time);
+    }
+
+    .login-link:hover {
+        color: black;
+    }
+
+    .register-btn {
+        background-color: transparent;
+        padding: .5rem 2rem;
+        border-radius: 15px;
+        color: var(--medium-gray);
+        border-color: var(--medium-gray);
+        transition: var(--transition-time);
+    }
+
+    .register-btn:hover {
+        color: black;
+        border-color: black;
+    }
+
+    .hamburger-btn {
+        display: none;
+    }
+
+    .logo {
+        cursor: pointer;
+    }
 }
